@@ -47,11 +47,12 @@ i {
   margin: 0;
 }
 
-.sub-title {
-  font-weight: 300;
-  font-size: 16px;
-  padding: 0.7em 1em;
-  margin: 0;
+.add-task {
+  width: 373px;
+  height: 10px;
+  border: none;
+  padding: 1em 1em;
+  margin-top: 1px;
   box-shadow: 0 2px 3px -2px #000;
 }
 
