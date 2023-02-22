@@ -75,6 +75,7 @@ i {
 
 .description {
   position: absolute;
+  border: none;
   left: 3em;
   line-height: 36px;
   font-weight: 400;
