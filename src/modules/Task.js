@@ -84,11 +84,9 @@ export default class Task {
     const desc = document.querySelectorAll('.description');
     desc.forEach((desript) => {
       desript.addEventListener('input', (e) => {
-        const myinpt = e.target.parentElement.value;
+        const myinpt = e.target.parentElement.id;
         this.todoList.forEach((item, id) => {
-            if (item.index - 1 === id) {
-                console.log(item.index - 1 === id)
-                console.log(id)
+          if (id.toString() === myinpt) {
             item.description = e.target.value;
           }
         });
