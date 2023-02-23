@@ -1,3 +1,7 @@
-/* eslint-disable */
 import './style.css';
-import Task, { tasks } from './modules/Task.js';
+import Task from './modules/Task.js';
+
+const tasks = new Task();
+tasks.inputTask();
+tasks.renderTask();
+tasks.updateTask();

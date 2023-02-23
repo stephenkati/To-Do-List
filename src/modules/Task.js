@@ -1,12 +1,12 @@
 import Activity from './activity.js';
-/* eslint-disable-next-line no-unused-vars */
+
 export default class Task {
   constructor() {
     this.todoList = [];
 
-    this.inputTask();
-    this.renderTask();
-    this.updateTask();
+    // this.inputTask();
+    // this.renderTask();
+    // this.updateTask();
   }
 
     renderTask = () => {
@@ -96,4 +96,3 @@ export default class Task {
     });
   }
 }
-export const tasks = new Task();
