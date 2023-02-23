@@ -28,4 +28,7 @@ module.exports = {
   optimization: {
     // // runtimeChunk: 'single',
   },
+  resolve: {
+    modules: ['node_modules']
+  }
 };
