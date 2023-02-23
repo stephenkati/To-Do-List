@@ -1,4 +1,3 @@
-/* eslint-disable */
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -27,6 +26,6 @@ module.exports = {
     ],
   },
   optimization: {
-    // // runtimeChunk: 'single',
+    // runtimeChunk: 'single',
   },
 };
