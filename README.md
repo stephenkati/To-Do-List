@@ -111,7 +111,6 @@ The website is build with HTML, CSS and Javascript.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
 
 - [Live Demo Link](Not deployed yet)
 
@@ -192,7 +191,6 @@ The project is not yet deployed.
 
 ## 👥 Author <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
 
 👤 **Stephen Katuli**
 
@@ -207,7 +205,6 @@ The project is not yet deployed.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
 
 - [ ] **[More backround images]**
 - [ ] **[Animations and transitions]**
