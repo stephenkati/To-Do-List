@@ -29,6 +29,6 @@ module.exports = {
     // // runtimeChunk: 'single',
   },
   resolve: {
-    modules: ['node_modules']
+    modules: ['node_modules'],
   }
 };
