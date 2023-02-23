@@ -3,10 +3,6 @@ import Activity from './activity.js';
 export default class Task {
   constructor() {
     this.todoList = [];
-
-    // this.inputTask();
-    // this.renderTask();
-    // this.updateTask();
   }
 
     renderTask = () => {
@@ -47,6 +43,7 @@ export default class Task {
 
       const input = document.createElement('input');
       input.setAttribute('type', 'checkbox');
+      input.onchange = () => this.completeTask(id);
       li.appendChild(input);
 
       const input1 = document.createElement('input');
@@ -95,4 +92,11 @@ export default class Task {
       });
     });
   }
+
+  completeTask = (id) => {
+    if (!id.checked) {
+      console.log(id)
+     }
+  }
+
 }
