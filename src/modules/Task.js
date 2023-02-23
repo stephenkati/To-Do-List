@@ -1,4 +1,5 @@
 import Activity from './activity.js';
+// import { completeTask } from './status.js';
 
 export default class Task {
   constructor() {
@@ -14,8 +15,7 @@ export default class Task {
 
     inputTask = () => {
       const form = document.querySelector('#form');
-      form.addEventListener('submit', (e) => {
-        e.preventDefault();
+      form.addEventListener('submit', () => {
         this.newTask();
       });
     }
@@ -38,12 +38,20 @@ export default class Task {
     this.todoList.forEach((item, id) => {
       const cardList = document.querySelector('.card-list');
 
+      let taskCompleted;
+      if (item.completed === true) {
+        taskCompleted = 'checked';
+      } else {
+        taskCompleted = '';
+      }
+
       const li = document.createElement('li');
       li.setAttribute('id', id);
 
       const input = document.createElement('input');
       input.setAttribute('type', 'checkbox');
       input.onchange = () => this.completeTask(id);
+      input.checked = taskCompleted;
       li.appendChild(input);
 
       const input1 = document.createElement('input');
@@ -93,10 +101,18 @@ export default class Task {
     });
   }
 
-  completeTask = (id) => {
-    if (!id.checked) {
-      console.log(id)
-     }
-  }
-
+   completeTask = (id) => {
+     this.todoList.forEach((item) => {
+       if (item.index - 1 === id) {
+         if (item.completed === false) {
+           item.completed = true;
+         } else {
+           item.completed = false;
+         }
+       }
+     });
+     localStorage.setItem('task', JSON.stringify(this.todoList));
+   };
 }
+
+export const tasks = new Task();
