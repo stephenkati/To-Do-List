@@ -30,7 +30,7 @@ After you're finished please remove all the comments and instructions!
  
   <br/>
 
-  <h3><b>Microverse README Template</b></h3>
+  <h3><b>To Do List</b></h3>
 
 </div>
 
@@ -64,7 +64,7 @@ After you're finished please remove all the comments and instructions!
 # 📖 [To Do List] 
 
 
-**[To Do List]** is a website for listing different 'to do' activities.
+**[To Do List]** is a website for listing different 'to do' activities. This application helps people add their activities and mark them as completed when their activities are completed. Users can add, update, delete, mark as completed and remove completed activities 
 The website is build with HTML, CSS and Javascript.
 
 
