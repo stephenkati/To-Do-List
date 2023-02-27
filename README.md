@@ -64,8 +64,7 @@ After you're finished please remove all the comments and instructions!
 # 📖 [To Do List] 
 
 
-**[To Do List]** is a website for listing different 'to do' activities. Users can add, update, delete, mark as completed and remove completed activities 
-Build with HTML, CSS and Javascript.
+**[To Do List]** is a website for listing different 'to do' activities. Users can add, update, delete, mark as completed and remove completed activities.   Build with HTML, CSS and Javascript.
 
 
 ## 🛠 Built With <a name="built-with"></a>
