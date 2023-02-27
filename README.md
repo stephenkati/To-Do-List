@@ -39,6 +39,7 @@ After you're finished please remove all the comments and instructions!
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
+-[📖 Project Description](#Project-description)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
@@ -63,8 +64,9 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 [To Do List] 
 
+## Project Description <a name="Project-description"></a>
 
-**[To Do List]** is a website for listing different 'to do' activities. Users can add, update, delete, mark as completed and remove completed activities.   Build with HTML, CSS and Javascript.
+A To Do List app that lets users create tasks that they would like to do and complete them. Users can add, update, delete, mark as completed and remove completed activities. Build with HTML, CSS and Javascript.
 
 
 ## 🛠 Built With <a name="built-with"></a>
