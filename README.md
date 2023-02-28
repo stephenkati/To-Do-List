@@ -30,7 +30,7 @@ After you're finished please remove all the comments and instructions!
  
   <br/>
 
-  <h3><b>Microverse README Template</b></h3>
+  <h3><b>To Do List</b></h3>
 
 </div>
 
@@ -236,6 +236,7 @@ If you like this project please reach out to me on my social media, hire me for 
 
 I would like to thankmy Microverse team and my coding partners for their support and guidance.
 
+I would like to thank  Kelly Sikkema for allowing me to use this amazing background image <a href="https://unsplash.com/@kellysikkema?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kelly Sikkema</a> on <a href="https://unsplash.com/s/photos/to-do-list?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"></a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
