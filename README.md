@@ -7,6 +7,7 @@ This is an example of how you may give instructions on setting up your project l
 Modify this file to match your project and remove sections that don't apply.
 
 REQUIRED SECTIONS:
+-Project description
 - Table of Contents
 - About the Project
   - Built With
@@ -38,6 +39,7 @@ After you're finished please remove all the comments and instructions!
 
 # 📗 Table of Contents
 
+- [📖 Project Description](#project-description)
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
@@ -63,9 +65,9 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 [To Do List] 
 
+## Project Description <a name="project-description"></a>
 
-**[To Do List]** is a website for listing different 'to do' activities.
-The website is build with HTML, CSS and Javascript.
+A To Do List app that lets users create tasks that they would like to do and complete them. Users can add, update, delete, mark as completed and remove completed activities. Build with HTML, CSS and Javascript.
 
 
 ## 🛠 Built With <a name="built-with"></a>
