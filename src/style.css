@@ -5,6 +5,10 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  background-image: url(./img/kelly-sikkema-6aY-6B3MiZ4-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .container {
