@@ -191,7 +191,7 @@ The project is not yet deployed.
 
 <!-- AUTHOR -->
 
-## 👥 Author <a name="authors"></a>
+## 👥 Authors <a name="authors"></a>
 
 
 👤 **Stephen Katuli**
@@ -200,6 +200,8 @@ The project is not yet deployed.
 - Twitter: [@twitterhandle](https://twitter.com/Stephen57913145)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/stephen-katuli-a92752251/)
 
+👤 **Gilbert Mutai**
+- GitHub: [@githubhandle](https://github.com/Mutai-Gilbert)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
