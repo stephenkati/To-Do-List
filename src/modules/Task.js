@@ -115,4 +115,4 @@ export default class Task {
 }
 
 const tasks = new Task();
-export {tasks}
+export { tasks };
