@@ -114,5 +114,3 @@ export default class Task {
      localStorage.setItem('task', JSON.stringify(this.todoList));
    };
 }
-
-export const tasks = new Task();

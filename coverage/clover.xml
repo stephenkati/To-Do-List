@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1677667567925" clover="3.2.0">
+  <project timestamp="1677667567925" name="All files">
+    <metrics statements="76" coveredstatements="12" conditionals="10" coveredconditionals="0" methods="20" coveredmethods="2" elements="106" coveredelements="14" complexity="0" loc="76" ncloc="76" packages="1" files="2" classes="2"/>
+    <file name="Task.js" path="/home/steve/Desktop/microverse projects/Module 2/Block 2/To-Do-List/src/modules/Task.js">
+      <metrics statements="73" coveredstatements="12" conditionals="10" coveredconditionals="0" methods="19" coveredmethods="2"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
+      <line num="10" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="11" count="0" type="stmt"/>
+      <line num="12" count="0" type="stmt"/>
+      <line num="16" count="1" type="stmt"/>
+      <line num="17" count="0" type="stmt"/>
+      <line num="18" count="0" type="stmt"/>
+      <line num="19" count="0" type="stmt"/>
+      <line num="23" count="1" type="stmt"/>
+      <line num="24" count="0" type="stmt"/>
+      <line num="25" count="0" type="stmt"/>
+      <line num="26" count="0" type="stmt"/>
+      <line num="27" count="0" type="stmt"/>
+      <line num="28" count="0" type="stmt"/>
+      <line num="29" count="0" type="stmt"/>
+      <line num="30" count="0" type="stmt"/>
+      <line num="31" count="0" type="stmt"/>
+      <line num="34" count="1" type="stmt"/>
+      <line num="35" count="0" type="stmt"/>
+      <line num="36" count="0" type="stmt"/>
+      <line num="38" count="0" type="stmt"/>
+      <line num="39" count="0" type="stmt"/>
+      <line num="42" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="43" count="0" type="stmt"/>
+      <line num="45" count="0" type="stmt"/>
+      <line num="48" count="0" type="stmt"/>
+      <line num="49" count="0" type="stmt"/>
+      <line num="51" count="0" type="stmt"/>
+      <line num="52" count="0" type="stmt"/>
+      <line num="53" count="0" type="stmt"/>
+      <line num="54" count="0" type="stmt"/>
+      <line num="55" count="0" type="stmt"/>
+      <line num="57" count="0" type="stmt"/>
+      <line num="58" count="0" type="stmt"/>
+      <line num="59" count="0" type="stmt"/>
+      <line num="60" count="0" type="stmt"/>
+      <line num="61" count="0" type="stmt"/>
+      <line num="62" count="0" type="stmt"/>
+      <line num="63" count="0" type="stmt"/>
+      <line num="65" count="0" type="stmt"/>
+      <line num="66" count="0" type="stmt"/>
+      <line num="67" count="0" type="stmt"/>
+      <line num="68" count="0" type="stmt"/>
+      <line num="70" count="0" type="stmt"/>
+      <line num="74" count="1" type="stmt"/>
+      <line num="75" count="0" type="stmt"/>
+      <line num="78" count="1" type="stmt"/>
+      <line num="79" count="0" type="stmt"/>
+      <line num="80" count="0" type="stmt"/>
+      <line num="81" count="0" type="stmt"/>
+      <line num="83" count="0" type="stmt"/>
+      <line num="84" count="0" type="stmt"/>
+      <line num="85" count="0" type="stmt"/>
+      <line num="88" count="1" type="stmt"/>
+      <line num="89" count="0" type="stmt"/>
+      <line num="90" count="0" type="stmt"/>
+      <line num="91" count="0" type="stmt"/>
+      <line num="92" count="0" type="stmt"/>
+      <line num="93" count="0" type="stmt"/>
+      <line num="94" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="95" count="0" type="stmt"/>
+      <line num="99" count="0" type="stmt"/>
+      <line num="104" count="1" type="stmt"/>
+      <line num="105" count="0" type="stmt"/>
+      <line num="106" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="107" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="108" count="0" type="stmt"/>
+      <line num="110" count="0" type="stmt"/>
+      <line num="114" count="0" type="stmt"/>
+      <line num="118" count="1" type="stmt"/>
+      <line num="120" count="1" type="stmt"/>
+      <line num="121" count="1" type="stmt"/>
+    </file>
+    <file name="activity.js" path="/home/steve/Desktop/microverse projects/Module 2/Block 2/To-Do-List/src/modules/activity.js">
+      <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <line num="3" count="0" type="stmt"/>
+      <line num="4" count="0" type="stmt"/>
+      <line num="5" count="0" type="stmt"/>
+    </file>
+  </project>
+</coverage>
