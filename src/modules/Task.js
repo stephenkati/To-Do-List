@@ -1,5 +1,4 @@
 import Activity from './activity.js';
-// import { completeTask } from './status.js';
 
 export default class Task {
   constructor() {
@@ -114,3 +113,6 @@ export default class Task {
      localStorage.setItem('task', JSON.stringify(this.todoList));
    };
 }
+
+const tasks = new Task();
+export { tasks };
