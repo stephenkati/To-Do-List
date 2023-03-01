@@ -22,7 +22,7 @@ export default class Task {
     newTask = () => {
       const index = this.todoList.length + 1;
       const completed = false;
-      const description = 'desc';
+      const description = document.querySelector('#task').value;
       const task = new Activity(index, completed, description);
       this.todoList.push(task);
       this.displayTask();
