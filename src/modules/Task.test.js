@@ -19,7 +19,7 @@ document.body.innerHTML = `
     </div>
 `;
 
-describe('add and delete items', () => {
+describe('add items', () => {
   test('add first item', () => {
     tasks.newTask();
 
@@ -43,12 +43,12 @@ describe('add and delete items', () => {
 
     expect(listfield).toHaveLength(3);
   });
+});
 
+describe('delete items', () => {
   test('remove one item', () => {
     tasks.removeTask(0);
-
     const listfield = document.querySelectorAll('li');
-
     expect(listfield).toHaveLength(2);
   });
 });
