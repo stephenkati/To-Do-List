@@ -1,5 +1,4 @@
 import Activity from './activity.js';
-// import { completeTask } from './status.js';
 
 export default class Task {
   constructor() {
@@ -23,7 +22,7 @@ export default class Task {
     newTask = () => {
       const index = this.todoList.length + 1;
       const completed = false;
-      const description = document.querySelector('#task').value;
+      const description = 'desc';
       const task = new Activity(index, completed, description);
       this.todoList.push(task);
       this.displayTask();
@@ -114,3 +113,7 @@ export default class Task {
      localStorage.setItem('task', JSON.stringify(this.todoList));
    };
 }
+
+const tasks = new Task();
+// export {newTask, removeTask};
+export {tasks}
