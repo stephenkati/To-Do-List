@@ -115,5 +115,4 @@ export default class Task {
 }
 
 const tasks = new Task();
-// export {newTask, removeTask};
 export {tasks}

@@ -2,8 +2,8 @@
  * @jest-environment jsdom
  */
 
-import Activity from './activity.js';
-import {newTask, removeTask} from "./Task.js";
+// import Activity from './activity.js';
+import {tasks} from "./Task.js";
 
 document.body.innerHTML = `
 <div class="container">
@@ -21,18 +21,54 @@ document.body.innerHTML = `
 
 describe('add and delete items', () => {
     test('add first item', () => {
-        // const index = 1;
-        // const completed = false;
-        // const description = 'exercise';
-        // const task = new Activity(index, completed, description);
-        // const listfield = document.querySelectorAll('li');
-        // expect(listfield).toHaveLength(1);
+  
+       tasks.newTask();
 
-       newTask();
+        const index = 1;
+        const completed = false;
+        const description = 'exercise';
 
        const listfield = document.querySelectorAll('li');
 
        expect(listfield).toHaveLength(1);
 
     })
+
+    test('add first item', () => {
+  
+        tasks.newTask();
+ 
+         const index = 2;
+         const completed = false;
+         const description = 'exercise again';
+ 
+        const listfield = document.querySelectorAll('li');
+ 
+        expect(listfield).toHaveLength(2);
+ 
+     })
+
+     test('add first item', () => {
+  
+        tasks.newTask();
+ 
+         const index = 3;
+         const completed = false;
+         const description = 'morning run';
+ 
+        const listfield = document.querySelectorAll('li');
+ 
+        expect(listfield).toHaveLength(3);
+ 
+     })
+
+     test('remove one item', () => {
+  
+        tasks.removeTask(0);
+ 
+        const listfield = document.querySelectorAll('li');
+ 
+        expect(listfield).toHaveLength(2);
+ 
+     })
 });
