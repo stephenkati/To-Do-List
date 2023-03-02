@@ -57,8 +57,7 @@ export default class Task {
       input1.setAttribute('type', 'text');
       input1.setAttribute('class', 'description');
       input1.setAttribute('value', `${item.description}`);
-      const d = new Date();
-      input1.setAttribute('id', d);
+      input1.setAttribute('id', `input-${id}`);
       li.appendChild(input1);
 
       const del = document.createElement('i');
@@ -116,3 +115,21 @@ export default class Task {
 
 const tasks = new Task();
 export { tasks };
+
+// const x = localGet();
+//   x.push(listAdded);
+//   localStorage.setItem('listStorage', JSON.stringify(x));
+//   todoTask.value = '';
+
+//   export default class ListTemplate {
+//     constructor(description, completed, index) {
+//       this.description = description;
+//       this.completed = completed;
+//       this.index = index;
+//     }
+
+//     const localGet = () => {
+//       const storage = JSON.parse(localStorage.getItem('listStorage')) || [];
+//       return storage;
+//     };
+//     export default localGet;
