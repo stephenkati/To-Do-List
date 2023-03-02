@@ -1,6 +1,7 @@
 /**
  * @jest-environment jsdom
  */
+import clearCompleted from './status.js';
 import { tasks } from './Task.js';
 
 document.body.innerHTML = `
@@ -58,3 +59,40 @@ describe('delete items', () => {
     expect(listfield).toHaveLength(2);
   });
 });
+
+describe('editing items', () => {
+  test('edit item at id-1 to normal', ()=> {
+    
+    tasks.updateTask()
+    
+    let desc = document.querySelector('#input-1').value;
+    desc = 'normal'
+
+    expect(desc).toBe('normal')
+  })
+})
+
+describe('check items as completed items', () => {
+  test('turn item at index zero to true', ()=> {
+
+    tasks.completeTask(0)
+    
+    let checkItem1 = document.getElementById(0).checked
+    checkItem1 = true;
+
+    expect(checkItem1).toBeTruthy()
+  
+  })
+})
+
+describe('clear all completed', () => {
+  test('Remove all checked items', ()=> {
+
+    clearCompleted()
+
+    const allTasks = tasks.todoList
+    const ClearAllCompleted = allTasks.filter((item) => item.completed === false);
+
+    expect(ClearAllCompleted).toHaveLength(1)
+  })
+})
