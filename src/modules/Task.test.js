@@ -98,7 +98,7 @@ describe('clear all completed', () => {
     clearCompleted();
 
     const allTasks = tasks.todoList;
-    const ClearAllCompleted = allTasks.filter((item) => item.completed === false);
+    const ClearAllCompleted = allTasks.filter((item) => item.completed !== true);
 
     expect(ClearAllCompleted).toHaveLength(1);
   });
