@@ -1,8 +1,6 @@
 /**
  * @jest-environment jsdom
  */
-
-// import Activity from './activity.js';
 import { tasks } from './Task.js';
 
 document.body.innerHTML = `
@@ -21,14 +19,18 @@ document.body.innerHTML = `
 
 describe('add items', () => {
   test('add first item', () => {
+
+    document.querySelector('#task').value = 'test 1';
     tasks.newTask();
-
+     
     const listfield = document.querySelectorAll('li');
-
+  
     expect(listfield).toHaveLength(1);
   });
 
-  test('add first item', () => {
+  test('add 2 item', () => {
+
+    document.querySelector('#task').value = 'test 2';
     tasks.newTask();
 
     const listfield = document.querySelectorAll('li');
@@ -36,13 +38,17 @@ describe('add items', () => {
     expect(listfield).toHaveLength(2);
   });
 
-  test('add first item', () => {
+  test('add 3 item', () => {
+
+    document.querySelector('#task').value = 'test 3';
     tasks.newTask();
 
     const listfield = document.querySelectorAll('li');
 
     expect(listfield).toHaveLength(3);
   });
+
+  
 });
 
 describe('delete items', () => {
