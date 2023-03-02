@@ -45,13 +45,21 @@ describe('add items', () => {
 
     expect(listfield).toHaveLength(3);
   });
+  test('add 4 item', () => {
+    document.querySelector('#task').value = 'test 4';
+    tasks.newTask();
+
+    const listfield = document.querySelectorAll('li');
+
+    expect(listfield).toHaveLength(4);
+  });
 });
 
 describe('delete items', () => {
   test('remove one item', () => {
     tasks.removeTask(0);
     const listfield = document.querySelectorAll('li');
-    expect(listfield).toHaveLength(2);
+    expect(listfield).toHaveLength(3);
   });
 });
 
@@ -71,6 +79,14 @@ describe('check items as completed items', () => {
     tasks.completeTask(0);
 
     let checkItem1 = document.getElementById(0).checked;
+    checkItem1 = true;
+
+    expect(checkItem1).toBeTruthy();
+  });
+  test('turn item at index one to true', () => {
+    tasks.completeTask(1);
+
+    let checkItem1 = document.getElementById(1).checked;
     checkItem1 = true;
 
     expect(checkItem1).toBeTruthy();

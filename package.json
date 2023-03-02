@@ -43,5 +43,6 @@
   "dependencies": {
     "jest-environment-jsdom": "^29.4.3",
     "lodash": "^4.17.21"
-  }
+  },
+  "main": "webpack.config.js"
 }
