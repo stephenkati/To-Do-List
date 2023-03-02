@@ -20,17 +20,15 @@ document.body.innerHTML = `
 
 describe('add items', () => {
   test('add first item', () => {
-
     document.querySelector('#task').value = 'test 1';
     tasks.newTask();
-     
+
     const listfield = document.querySelectorAll('li');
-  
+
     expect(listfield).toHaveLength(1);
   });
 
   test('add 2 item', () => {
-
     document.querySelector('#task').value = 'test 2';
     tasks.newTask();
 
@@ -40,7 +38,6 @@ describe('add items', () => {
   });
 
   test('add 3 item', () => {
-
     document.querySelector('#task').value = 'test 3';
     tasks.newTask();
 
@@ -48,8 +45,6 @@ describe('add items', () => {
 
     expect(listfield).toHaveLength(3);
   });
-
-  
 });
 
 describe('delete items', () => {
@@ -61,38 +56,34 @@ describe('delete items', () => {
 });
 
 describe('editing items', () => {
-  test('edit item at id-1 to normal', ()=> {
-    
-    tasks.updateTask()
-    
-    let desc = document.querySelector('#input-1').value;
-    desc = 'normal'
+  test('edit item at id-1 to normal', () => {
+    tasks.updateTask();
 
-    expect(desc).toBe('normal')
-  })
-})
+    let desc = document.querySelector('#input-1').value;
+    desc = 'normal';
+
+    expect(desc).toBe('normal');
+  });
+});
 
 describe('check items as completed items', () => {
-  test('turn item at index zero to true', ()=> {
+  test('turn item at index zero to true', () => {
+    tasks.completeTask(0);
 
-    tasks.completeTask(0)
-    
-    let checkItem1 = document.getElementById(0).checked
+    let checkItem1 = document.getElementById(0).checked;
     checkItem1 = true;
 
-    expect(checkItem1).toBeTruthy()
-  
-  })
-})
+    expect(checkItem1).toBeTruthy();
+  });
+});
 
 describe('clear all completed', () => {
-  test('Remove all checked items', ()=> {
+  test('Remove all checked items', () => {
+    clearCompleted();
 
-    clearCompleted()
-
-    const allTasks = tasks.todoList
+    const allTasks = tasks.todoList;
     const ClearAllCompleted = allTasks.filter((item) => item.completed === false);
 
-    expect(ClearAllCompleted).toHaveLength(1)
-  })
-})
+    expect(ClearAllCompleted).toHaveLength(1);
+  });
+});
