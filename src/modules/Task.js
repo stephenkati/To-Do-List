@@ -115,21 +115,3 @@ export default class Task {
 
 const tasks = new Task();
 export { tasks };
-
-// const x = localGet();
-//   x.push(listAdded);
-//   localStorage.setItem('listStorage', JSON.stringify(x));
-//   todoTask.value = '';
-
-//   export default class ListTemplate {
-//     constructor(description, completed, index) {
-//       this.description = description;
-//       this.completed = completed;
-//       this.index = index;
-//     }
-
-//     const localGet = () => {
-//       const storage = JSON.parse(localStorage.getItem('listStorage')) || [];
-//       return storage;
-//     };
-//     export default localGet;

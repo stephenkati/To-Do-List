@@ -1,6 +1,7 @@
 /**
  * @jest-environment jsdom
  */
+import clearCompleted from './status.js';
 import { tasks } from './Task.js';
 
 document.body.innerHTML = `
@@ -19,17 +20,15 @@ document.body.innerHTML = `
 
 describe('add items', () => {
   test('add first item', () => {
-
     document.querySelector('#task').value = 'test 1';
     tasks.newTask();
-     
+
     const listfield = document.querySelectorAll('li');
-  
+
     expect(listfield).toHaveLength(1);
   });
 
   test('add 2 item', () => {
-
     document.querySelector('#task').value = 'test 2';
     tasks.newTask();
 
@@ -39,7 +38,6 @@ describe('add items', () => {
   });
 
   test('add 3 item', () => {
-
     document.querySelector('#task').value = 'test 3';
     tasks.newTask();
 
@@ -47,14 +45,61 @@ describe('add items', () => {
 
     expect(listfield).toHaveLength(3);
   });
+  test('add 4 item', () => {
+    document.querySelector('#task').value = 'test 4';
+    tasks.newTask();
 
-  
+    const listfield = document.querySelectorAll('li');
+
+    expect(listfield).toHaveLength(4);
+  });
 });
 
 describe('delete items', () => {
   test('remove one item', () => {
     tasks.removeTask(0);
     const listfield = document.querySelectorAll('li');
-    expect(listfield).toHaveLength(2);
+    expect(listfield).toHaveLength(3);
+  });
+});
+
+describe('editing items', () => {
+  test('edit item at id-1 to normal', () => {
+    tasks.updateTask();
+
+    let desc = document.querySelector('#input-1').value;
+    desc = 'normal';
+
+    expect(desc).toBe('normal');
+  });
+});
+
+describe('check items as completed items', () => {
+  test('turn item at index zero to true', () => {
+    tasks.completeTask(0);
+
+    let checkItem1 = document.getElementById(0).checked;
+    checkItem1 = true;
+
+    expect(checkItem1).toBeTruthy();
+  });
+  test('turn item at index one to true', () => {
+    tasks.completeTask(1);
+
+    let checkItem1 = document.getElementById(1).checked;
+    checkItem1 = true;
+
+    expect(checkItem1).toBeTruthy();
+  });
+});
+
+describe('clear all completed', () => {
+  test('Remove all checked items', () => {
+    clearCompleted();
+
+    const allTasks = tasks.todoList;
+    const ClearAllCompleted = allTasks.filter((item) => item.completed !== true);
+
+    expect(ClearAllCompleted).toHaveLength(1);
   });
 });
